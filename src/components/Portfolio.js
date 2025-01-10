@@ -8,7 +8,7 @@ const Portfolio = () => {
       <header className="header">
         <div className="header-info">
           <h1>{data.name}</h1>
-          <h2>{data.role}</h2>
+          <p>{data.role}</p>
         </div>
         <div className="header-contact">
           <p>
