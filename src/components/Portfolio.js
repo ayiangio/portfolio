@@ -11,22 +11,30 @@ const Portfolio = () => {
           <p>{data.role}</p>
         </div>
         <div className="header-contact">
-          <p>
-            <strong>Email: </strong>
-            <a href={`mailto:${data.contact[0].email}`}>{data.contact[0].email}</a>
-          </p>
-          <p>
-            <strong>GitHub: </strong>
-            <a href={data.contact[0].github} target="_blank" rel="noopener noreferrer">
-              {data.contact[0].github}
-            </a>
-          </p>
-          <p>
-            <strong>LinkedIn: </strong>
-            <a href={data.contact[0].linkedin} target="_blank" rel="noopener noreferrer">
-              {data.contact[0].linkedin}
-            </a>
-          </p>
+          <a
+            href={`mailto:${data.contact[0].email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Email"
+          >
+            <i className="fas fa-envelope"></i>
+          </a>
+          <a
+            href={data.contact[0].github}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href={data.contact[0].linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
         </div>
       </header>
       <main>
